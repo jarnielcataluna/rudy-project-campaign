@@ -254,7 +254,7 @@
 	}
 
 	if (detectmob()){
-		top.location.href="http://bit.ly/2eC2cfw";
+		top.location.href="http://bit.ly/2opf9wh";
 	}
 
 	$('.btn-cancel-entry').click(function(e){

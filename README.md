@@ -1,2 +1,2 @@
-# manulife-ms
-Microsite for Manulife
+# RudyProject Campaign
+RudyProject Campaign
