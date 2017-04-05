@@ -47,6 +47,24 @@
 </style>
 
 <script src="https://tools.propelrr.com/rudycampaign/js/html5.js"></script>
+<script type="text/javascript">
+	// function detectmob() {
+	//    if(window.innerWidth >= 800) {
+	//      return true;
+	//    } else {
+	//      return false;
+	//    }
+	// }
+
+	// if (detectmob()){
+		
+	// }
+
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	} else {
+		top.location.href="http://bit.ly/2opf9wh";
+	}
+</script>
 </head>
 <body>
 <section id="main-container">
@@ -61,10 +79,19 @@
 	</div>
 	<div class="popup-wrap popup-thankyou">
 		<div class="popup-content">
-			<a href="#" class="close-text"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<a href="#" class="close-text go-gallery"><i class="fa fa-times" aria-hidden="true"></i></a>
 			<div class="thankyou-page">
 				<h2>Thank you for uploading your entry! <br> <br> </h2>
 				<p>Please stand by as we review your submission. You'll receive an SMS notification from us if your submission has been approved.</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup-wrap popup-error">
+		<div class="popup-content">
+			<a href="#" class="close-text back-error"><i class="fa fa-times" aria-hidden="true"></i></a>
+			<div class="thankyou-page">
+				<h2>Error!<br> <br> </h2>
+				<p>No Internet connection please try again.</p>
 			</div>
 		</div>
 	</div>
@@ -153,7 +180,7 @@
 											<input type="text" id="first-name" name="" onchange="this.setAttribute('value', this.value);">
 										</div>
 									</div>
-									<div class="input-wrap input-inline">
+									<div class="input-wrap input-inline input-gender">
 										<label>Sex:</label>
 										<div class="custom-radio">
 										  	<input type="radio" id="radio01" name="radio" />
@@ -243,18 +270,6 @@
 	        }
 	        reader.readAsDataURL(input.files[0]);
 	    }
-	}
-
-	function detectmob() {
-	   if(window.innerWidth >= 800) {
-	     return true;
-	   } else {
-	     return false;
-	   }
-	}
-
-	if (detectmob()){
-		top.location.href="http://bit.ly/2opf9wh";
 	}
 
 	$('.btn-cancel-entry').click(function(e){
